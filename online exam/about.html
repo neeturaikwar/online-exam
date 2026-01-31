@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css"
+    integrity="sha512-M5Kq4YVQrjg5c2wsZSn27Dkfm/2ALfxmun0vUE3mPiJyK53hQBHYCVAtvMYEC7ZXmYLg8DVG4tF8gD27WmDbsg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Next National Test(NNT)</title>
+  <link rel="icon" href="./images/examlogo.png">
+  <script src="d.js"></script>
+  <style>
+   .clients{
+         position: relative;
+      }
+      .outerclient{
+         position: absolute;
+         top: 0px;
+         left: 0px;
+         height: 100%;
+         width: 100%;
+         background-color: black;
+         opacity: 0.6;
+      }
+       #scrollTopBtn {
+      display: none; 
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;
+      border: none;
+      outline: none;
+      background-color: #737576;
+      box-shadow: 0px 0px 1px 0px;
+      color: white;
+      cursor: pointer;
+      padding: 12px 15px;
+      border-radius: 50%;
+      font-size: 18px;
+      transition: all 0.3s ease;
+    }
+
+    #scrollTopBtn:hover {
+      background-color: #e43434;
+      transform: scale(1.1);
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!----------------------------------top head ------------------------------>
+    <div class="row bg-info t">
+      <div class="col-sm-6 text-center "> <i class="fa-regular fa-comments"></i>&nbsp;feedback |<span
+          >Next
+          National test</span><span ></span></div>
+      <div class="col-sm-6 text-center">see also on <a href="#" id="twitter"><i
+            class="fa-brands fa-square-x-twitter"></i></a> |
+        <a href="#" id="youtube"><i class="fa-brands fa-youtube"></i></a>| <a href="#" id="youtube"><i
+            class="fa-brands fa-square-facebook"></i></a>
+      </div>
+    </div>
+    <!-----------------------------------navbar ----------------------------------------->
+
+    <div class="row">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./images/examlogo5.webp" alt="Logo" width="50" height="35" class="d-inline-block align-text-top">
+            <span style="color:cornflowerblue;"> NEXT NATIONAL TEST</span>
+          </a>
+          <!-- <a class="navbar-brand" href="#">NNT</a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-3 mb-lg-0 gap-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"><i class="fa-solid fa-circle-info"></i>About us
+                  <i class="fa-whiteboard fa-semibold fa-house"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="showque.html"><i class="fa-solid fa-hexagon-nodes"></i>Exam Center
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html"><i class="fa-solid fa-registered"></i>Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html"><i class="fa-sharp fa-solid fa-circle-user"></i>Login</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-----------------------------------------------main container-------------------------------->
+    <!----------------------------------About us------------------------------------------------------>
+        <div class="row my-5">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10 p-0 ">
+                <p class="h1 text-center">About Us</p>
+                <hr>
+                <p class="text-center" style="font-size: 20px;">In <b>KeyZenX </b>Company are Developed in 2010. Is under NEXT NATIONAL TEST
+                    (NNT)</p>
+                <p style="text-align: justify; font-size: 18px;">Next National Test (NNT) has been established as a premier, specialist, autonomous and
+                    self-sustained testing organization to conduct entrance examinations for admission/fellowship in
+                    higher educational institutions.
+                    To assess competence of candidates for admissions has always been a challenge in terms of
+                    matching with research based international standards, efficiency, transparency and error free
+                    delivery. The National Testing Agency is entrusted to address all such issues using best in
+                    every field, from test preparation, to test delivery and to test marking.</p>
+            </div>
+               <div class="col-sm-1"></div>
+        </div>
+        <div class="row p-5" style="width: 80%;margin-left: 10%; background-color: whitesmoke;" >
+            <div class="col-sm-5 p-5">
+                <img src="images/missio.png" class="imga" height="100%" width="100%">
+            </div>
+            <div class="col-sm-7 px-5">
+                <p class="text-center h3">Our Vision</p>
+                <hr>
+                <p  style="text-align: justify; font-size: 18px;">The right candidates joining best institutions will give India her demographic dividend.</p>
+                <p  style="text-align: justify; font-size: 18px;">NNT will create a system which will promote teaching (by teachers), learning (by students) and
+                    assessment (by parents and institutions).NNT strongly believes in quality, efficiency,
+                    effectiveness, equity and security of assessments. To practice these values, NNT will constantly
+                    engage with its stakeholders, viz. students, parents, teachers, experts and partner institutions.
+                </p>
+            </div>
+        </div>
+
+        <div class="row p-5" style="width: 80%;margin-left: 10%;" >
+           <div class="col-sm-7 px-5">
+              <p class="text-center h3">Our Mision</p>
+              <hr>
+              <p  style="text-align: justify; font-size: 18px;"> To improve equity and quality in education by administering research based valid, reliable, efficient,
+                transparent, fair and international level assessments. The best subject matter experts and IT delivery
+                professionals will ensure that the current gaps in existing assessment systems are properly identified
+                and bridged.
+               </p>
+               <p style="text-align: justify; font-size: 18px;">"To empower students by providing a reliable and accessible online examination platform that enhances learning and boosts confidence."
+
+               "Our mission is to make testing simple, transparent, and effective, helping learners assess their knowledge anytime, anywhere."
+
+               "We aim to create a fair, secure, and user-friendly exam system that motivates students to achieve their full potential."</p>
+            </div>
+            <div class="col-sm-5 p-5 mt-5">
+                <img src="images/vision.jpg"  class="imga" height="100%" width="100%">
+            </div>
+            </div>
+
+
+        <div class="row p-5" style="width: 80%; margin-left: 10%;  background-color: whitesmoke" >
+            <div class="col-sm-5 p-5">
+                <img src="images/obj.webp"  class="imga" height="100%" width="100%">
+            </div>
+            <div class="col-sm-7 p-5">
+                <p class="text-center h3">Our Objective</p>
+                <hr>
+                <p style="text-align: justify; font-size: 18px;">To conduct efficient, transparent and international standards tests in order to assess the competency
+                    of candidates for admission purposes.</p>
+                    <p style="text-align: justify; font-size: 18px;">To undertake research on educational, professional and testing systems to identify gaps in the
+                    knowledge systems and take steps for bridging them.</p>
+                   <p style="text-align: justify; font-size: 18px;"> To identify experts and institutions in setting examination questions.</p>
+            </div>
+        </div>
+
+        <!-- start student details  -->
+          <!-- start client review  -->
+
+      <div class="container text-center my-5 pb-4" style=" border-radius: 30px; background-color: whitesmoke;">
+        <div class="row">
+
+          <div class="col-sm-3 ">
+            <h1 class="fw-bold display-3 mt-5"> 10+k</h1>
+            <h2>Years Of business</h2>
+          </div>
+          <div class="col-sm-3">
+            <h1 class="fw-bold display-3 mt-5">5k</h1>
+            <h2> Happy Students</h2>
+          </div>
+          <div class="col-sm-3">
+            <h2 class="fw-bold display-3 mt-5">55</h2>
+            <h2>Employess</h2>
+          </div>
+        <div class="col-sm-3">
+            <h1 class="fw-bold display-3 mt-5">10+k</h1>
+            <h2>Opening hours</h2>
+          </div>
+        </div>
+
+
+         <div class="row justify-content-center my-4 ">
+    
+    <!-- Card 1 -->
+              <div class="col-md-4 mt-2">
+                <div class="card text-center" style="background-color: #1ec6c6; border-radius: 30px; color: #fff ; min-height: 250px">
+                  <div class="card-body mt-4">
+                    <div style="font-size: 30px;"><i class="bi bi-emoji-smile"></i></div>
+                    <h1 class="mt-2 card-title" >Our Management</h1>
+                    <p class="card-text">"Our management" typically refers to the way a company or organization is run, including its strategies, processes, and the people involved in making decisions. </p>
+                  </div>
+                </div>
+              </div>
+
+    <!-- Card 2 -->
+              <div class="col-md-4 mt-2" >
+                <div class="card text-center" style="background-color: #1ec6c6; border-radius: 30px; color: #fff; min-height: 250px">
+                  <div class="card-body mt-4">
+                    <div style="font-size: 30px;"><i class="bi bi-emoji-smile"></i></div>  
+                    <h1 class="mt-2 card-title">Leading Way</h1>
+                    <p class="card-text">"Leading way " likely refers to content strategies that aim to guide or direct individuals towards a specific goal or outcome, often within the context of marketing or leadership development. </p>
+                  </div>
+                </div>
+              </div>
+    <!-- Card 3 -->
+              <div class="col-md-4 mt-2">
+                <div class="card text-center" style="background-color: #1ec6c6; border-radius: 30px; color: #fff; min-height: 250px">
+                  <div class="card-body mt-4">
+                    <div style="font-size: 30px;"><i class="bi bi-suit-heart"></i></div> 
+                    <h1 class="mt-2 card-title">Students Lovey</h1>
+                    <p class="card-text">Student love content encompasses a wide range of expressions of affection and appreciation for animals, often shared online through quotes, stories, and videos. </p>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+        </div>
+
+      <!-- end client review  -->
+
+<!-- end student review  -->
+        
+      <!-- start Clients Testimonials -->
+
+      <div class="row my-5 clients" style="background-image: url(images/back.jpg); background-size: cover; background-repeat: no-repeat;">
+         <div class="outerclient"></div>
+         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-indicators">
+               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+               <h1 class="fw-bold text-center text-light mt-5" style="font-size: 40px;">Clients Testimonials</h1>
+               <div class="row line"></div>
+               <div class="carousel-item active">
+                  <div class="row my-5">
+                     <div class="col-sm-3"></div>
+                     <div class="col-sm-6 ">
+                        <center><img src="images/client1.png" class="d-block " style="border-radius: 50%; height: 100px; width: 100px;"></center>
+                        <p class=" fs-6 text-light text-center">"Adopting Max has been one of the best decisions we've ever made. Our family was looking for a dog that would fit our active lifestyle, and the team was incredibly helpful in guiding us to Max. He’s full of energy, loves our kids, and has brought so much joy into our home. The entire process, from the first inquiry to bringing him home, was seamless and supportive. We can't thank you enough for connecting us with our new best friend. He truly completes our family."</p>
+                        <p class="fw-bold fs-6  text-center " style="color: #FC6100;">Muskan</p>
+                     </div>
+                     <div class="col-sm-3x"></div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="row my-5">
+                     <div class="col-sm-3"></div>
+                     <div class="col-sm-6 ">
+                        <center><img src="images/client2.jpg" class="d-block " style="border-radius: 50%; height: 100px; width: 100px;"></center>
+                        <p class=" fs-6 text-light text-center">"After living alone for a while, I decided I needed a quiet companion. Adopting Luna was the perfect choice. She is calm, affectionate, and fits right into my cozy apartment life. The staff was so patient, answering all my questions and helping me choose a cat whose personality matched mine. Luna has this soothing presence—her purrs make my day. I'm so grateful for your organization; you didn't just help me adopt a Student, you helped me find a peaceful and loving friend."</p>
+                        <p class="fw-bold fs-6 text-center" style="color: #FC6100;">Rebort</p>
+                     </div>
+                     <div class="col-sm-3"></div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="row my-5">
+                     <div class="col-sm-3"></div>
+                     <div class="col-sm-6 ">
+                        <center><img src="images/client3.png" class="d-block " style="border-radius: 50%; height: 100px; width: 100px;"></center>
+                     <p class=" fs-6 text-light text-center">"When we first considered getting a Student, we weren't sure what would be the right fit. We learned about your rabbit adoption program and were immediately intrigued. Adopting Charlie, our little rabbit, was a wonderful experience. He is so much more interactive and expressive than we ever imagined. The team provided fantastic advice on his care and diet, making us feel confident as new rabbit owners. Charlie's little hops and "binkies" fill our home with laughter. Thank you for showing us how amazing rabbits can"</p>
+                     <p class="fw-bold fs-6 text-center" style="color: #FC6100;">Scott</p>
+                  </div>
+                  <div class="col-sm-3"></div>
+               </div>
+               </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>
+
+      <!-- end Clients Testimonials -->
+
+    <!-------------------------------------------Footer ---------------------------------------------->
+    <div  class="row  py-4 " style="background-color: rgb(218, 218, 218);">
+            <div class="col-sm-4">
+                <div class="row text-center m-4">Our online test platform is designed to boost your confidence and success.
+                         <br><b>"Test Yourself, Improve Yourself"</b>
+                </div>
+                <div class="row text-center">
+                <b>Links:</b>
+                <center>
+                    <i class="fa-brands fa-facebook fa-fade "></i>
+                    <i class="fa-brands fa-instagram fa-fade"></i>
+                    <i class="fa-brands fa-linkedin-in fa-fade"></i>
+                    <i class="fa-brands fa-x-twitter fa-fade"></i>
+                    <i class="fa-solid fa-globe fa-spin"></i> 
+                </center>
+                  
+               </div>
+
+            </div>
+            <div class="col-sm-4">
+                
+               <div class="row px-5">
+                 <h3 class="text-center" > Quick Links</h3><hr>
+                <div class="col-sm-6 mt-4">
+                  <ul type="none">
+                    <a href="index.html" class="text-decoration-none text-dark pt-3 "><li class="pt-3"><i class="fa-solid fa-house"></i>Home</li></a>
+                    <a href="about.html" class="text-decoration-none text-dark pt-3"><li class="pt-3"><i class="fa-solid fa-circle-info"></i>About us</li></a>
+                    <a href="showque.html" class="text-decoration-none text-dark pt-3"><li class="pt-3"><i class="fa-solid fa-hexagon-nodes"></i>Exam Center</li></a>
+                </ul>
+                </div>
+                <div class="col-sm-6 mt-4">
+                  <ul type="none">
+                     <a href="contact.html" class="text-decoration-none text-dark pt-3"><li class="pt-3"> <i class="fa-solid fa-address-book"></i>Contact Us</li></a>
+                    <a href="login.html" class="text-decoration-none text-dark pt-3"><li class="pt-3"><i class="fa-sharp fa-solid fa-circle-user"></i>Login</li></a>
+                </ul>
+                </div>
+                
+               </div>
+            </div>
+
+            <div class="col-sm-4 pt-0 pb-3 px-5">
+               <div class="row text-center" style="width: 80%; margin-left: 10%;">
+                 <h3>Our Company</h3>
+                 <hr>
+                
+                <div class="text-center mt-3 ">
+                <h5>About</h5>
+                <p>Our company  <b>KSS-KeyZenX</b>  provides you best learning in easy way because coding is not coding only error solving </p>
+               </div>
+               <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="example@gmail.com" aria-label="Recipient's username" aria-describedby="button-addon2" style="border-top-left-radius: 30px; border-bottom-left-radius: 30px;">
+                  <button class="btn btn-info" style=" border-top-right-radius: 30px; border-bottom-right-radius: 30px; " type="button" id="button-addon2">Subscribe</button>
+               </div>
+              </div>
+            </div>
+        </div>
+        <div class="row bg-dark" style="min-height: 30px;">
+            <div class="col-sm-6 text-white  text-center "> &copy;2025 All rights reserved </div>
+            <div class="col-sm-6 text-white text-center fs-6">Devloped by-<a href="developer.html" class="text-white text-decoration-none"><b>KeyZenX</b>  Team Members</a></div>
+        </div>
+      </div>
+  </div>
+    <button id="scrollTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+
+</body>
+
+</html>
+<script>
+     // Show/hide button on scroll
+    window.onscroll = function() { showButton() };
+
+    function showButton() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        document.getElementById("scrollTopBtn").style.display = "block";
+      } else {
+        document.getElementById("scrollTopBtn").style.display = "none";
+      }
+    }
+
+    // Scroll to top function
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }
+  </script>

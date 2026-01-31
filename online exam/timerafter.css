@@ -1,0 +1,19 @@
+const startingminut=20;
+let time=startingminut*60;
+
+var countDownEl=document.getElementById("CountDown");
+
+setInterval(UpdateCountDown,1000);
+
+ function UpdateCountDown()
+ {
+    const minuts=Math.floor(time/60);
+    let seconds=time%60;
+    countDownEl.innerHTML=`${minuts}:${seconds}`
+    time--;
+    if(time<0)
+    {
+      time=0;
+    }
+    
+ }

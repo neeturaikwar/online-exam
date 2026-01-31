@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css"
+    integrity="sha512-M5Kq4YVQrjg5c2wsZSn27Dkfm/2ALfxmun0vUE3mPiJyK53hQBHYCVAtvMYEC7ZXmYLg8DVG4tF8gD27WmDbsg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Next National Test(NNT)</title>
+  <link rel="icon" href="./images/examlogo.png">
+  <script src="d.js"></script>
+  <style>
+      #scrollTopBtn {
+      display: none; /* default hidden */
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;
+      border: none;
+      outline: none;
+      background-color: #737576;
+      box-shadow: 0px 0px 1px 0px;
+      color: white;
+      cursor: pointer;
+      padding: 12px 15px;
+      border-radius: 50%;
+      font-size: 18px;
+      transition: all 0.3s ease;
+    }
+
+    #scrollTopBtn:hover {
+      background-color: #e43434;
+      transform: scale(1.1);
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container-fluid ">
+    <!----------------------------------top head ------------------------------>
+    <div class="row bg-info t">
+      <div class="col-sm-6 text-center "> <i class="fa-regular fa-comments"></i>&nbsp;feedback |<span
+          >Next
+          National test</span><span ></span></div>
+      <div class="col-sm-6 text-center">see also on <a href="#" id="twitter"><i
+            class="fa-brands fa-square-x-twitter"></i></a> |
+        <a href="#" id="youtube"><i class="fa-brands fa-youtube"></i></a>| <a href="#" id="youtube"><i
+            class="fa-brands fa-square-facebook"></i></a>
+      </div>
+    </div>
+    <!-----------------------------------navbar ----------------------------------------->
+
+    <div class="row">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./images/examlogo5.webp" alt="Logo" width="50" height="35" class="d-inline-block align-text-top">
+            <span style="color:cornflowerblue;"> NEXT NATIONAL TEST</span>
+          </a>
+          <!-- <a class="navbar-brand" href="#">NNT</a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-3 mb-lg-0 gap-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"><i class="fa-solid fa-circle-info"></i>About us
+                  <i class="fa-whiteboard fa-semibold fa-house"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="showque.html"><i class="fa-solid fa-hexagon-nodes"></i>Exam Center
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html"><i class="fa-solid fa-address-book"></i>Contact Us
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html"><i class="fa-sharp fa-solid fa-circle-user"></i>Login</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-----------------------------------------------main container-------------------------------->
+    <!-----------------------------------------------main container-------------------------------->
+    <div class="container-fluid m-0 p-0">
+        <div class="row m-0 p-0">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/slider1.jpg" class="d-block " height="400px" width="100%">
+          </div>
+          <div class="carousel-item">
+            <img src="images/slider2.png" class="d-block " height="400px" width="100%">
+          </div>
+          <div class="carousel-item">
+            <img src="images/slider3.jpg"  class="d-block " height="400px" width="100%">
+          </div>
+          <div class="carousel-item">
+            <img src="images/slider4.jpeg"  class="d-block " height="400px" width="100%">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    </div>
+    
+    <!--------------------------------------main header 2--------------------------------------------->
+    <div class="row mt-4" style="min-height:auto">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+        <div class="container-md ">
+          <p class="text text-center h1" style="font-weight: bolder;">Welcome To NNT</p>
+          <div class="card w-60 mb-3">
+            <button type="button" class="btn btn-primary position-relative" style="font-weight: bolder;">
+              About NNT
+              <span
+                class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                <span class="visually-hidden">New alerts</span>
+              </span>
+            </button>
+            <div class="card-body">
+              <h5 class="card-title" style="font-weight: bolder;">About Us</h5>
+              <p class="card-text">Next National TESTING (NNT) has been established as a premier, specialist, autonomous
+                and self-sustained testing organization to conduct entrance examinations for admission/fellowship in
+                higher educational institutions.
+
+                To assess competence of candidates for admissions has always been a challenge in terms of matching with
+                research based international standards, efficiency, transparency and error free delivery.</p>
+              <a href="#" class="btn btn-primary px-5 fw-bolder">READ NORE</a>
+            </div>
+          </div>
+          <div class="card w-60 mb-3">
+            <button type="button" class="btn btn-primary position-relative" style="font-weight: bolder;">
+              Inbox News
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                99+
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </button>
+            <div class="card-body">
+              <h5 class="card-title" style="font-weight: bolder;">Latest @NNT</h5>
+              <marquee direction="down" height="200px" scrollamount="2" behavior="alternate">
+                <p class="card-text">1. NAVAYUG SCHOOL SAROJINI NAGAR ENTRANCE TEST (NSSNET)-2025. <a
+                    href="">Readmore.</a> <br>
+                  2.Inviting Online Application Form for Study Webs of Active Learning for Young Aspiring Minds
+                  [SWAYAM-2025 (January Semester)] -reg <a href="">Readmore.</a> <br>
+                  3.Advance Intimation for Allotment of Examination City to the Applicants of Joint Entrance Examination
+                  (Main) - 2025 Session-2 -Reg.<a href="">Readmore.</a> <br>
+                  4.Examination Date and Schedule for National Initiative for Technical Teachers Training (NITTT)
+                  Examination March 2025 . <a href="">Readmore.</a> <br>
+                  5.DISPLAY OF PROVISIONAL ANSWER KEYS, AND QUESTION PAPER WITH RECORDED RESPONSES FOR ANSWER KEY
+                  CHALLENGE FOR JOINT CSIR-UGC NET EXAMINATION DECEMBER, 2024.<a href="">Readmore.</a> <br>
+                  6. Advance Intimation of Examination City allotted to the applicants of Common University Entrance
+                  Test [CUET (PG) – 2025].<a href="">Readmore.</a> <br>
+                  7.Admit Cards for reschedule of Joint CSIR-UGC NET December 2024 Exam held on 28.02.2025 (Shift-1
+                  ONLY) in Assam Down Town University, Guwahati, Assam .<a href="">Readmore.</a> <br>
+                  8.Kind Attention to the Candidates of Silchar, Assam who will be appearing for the CUET (UG) - 2024 –
+                  reg.<a href="">Readmore.</a> <br>
+                  9. Re-opening the Registration for Online Application Forms of the Indian Council of Agricultural
+                  Research (ICAR) [AIEEA(PG) and AICE JRF/SRF(Ph.D)] Entrance Examinations -2024 .<a
+                    href="">Readmore.</a> <br>
+                  10. CUET (UG) - 2024 Examination commences successfully across the Country and abroad More than 75%
+                  candidates attend the examination on Day 1 Examination to be concluded in a record time span of 8
+                  days.<a href="">Readmore.</a> <b>
+                    <p>11.Display of Admit Cards of Study Webs of Active Learning for Young Aspiring Minds (SWAYAM)
+                      January
+                      2024 Semester Exams . <a href="">Readmore.</a> </p>
+              </marquee>
+              <a href="#" class="btn btn-primary px-5 fw-bolder">ARCHIVE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
+    <!-------------------------------------------main header3--------------------------------------->
+    <div class="row">
+      <p class="text-center h1">NEXT <span class="h1"
+          style="color: white;background-color:rgb(235, 141, 73)">NATIONAL</span> TEST</p>
+      <p class="text-center">NEXT National Test (NNT) is a registered society under the Societies Registration Act,
+        1860.</p>
+      <p class="text-center">The NNT will conduct all exams in following domains:</p>
+    </div>
+    <!--------------------------------------------ALL EXams conducts------------------------------------>
+    <div class="contaier my-5">
+      <marquee behavior="" direction="left" onmouseover="(stop)" onmouseleave="start">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="card" style="width: 13rem;">
+              <img src="images/jee.jpeg" class="card-img-top" alt="..." height="200">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder">JEE MAINS EXAM
+
+                </h5>
+                <p class="card-text">For more info</p>
+                    <a href="#" class="btn btn-info">Registeration</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card" style="width: 13rem;">
+              <img src="images/rename.jpeg" class="card-img-top" alt="..." height="200">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder">NEET EXAM</h5>
+                <p class="card-text">For more info</p>
+                <a href="#" class="btn btn-info">Registeration</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card" style="width: 13rem;">
+              <img src="images/swayam.jpeg" class="card-img-top" alt="..." height="200">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder">SWAYAM</h5>
+                <p class="card-text">For more info</p>
+                <a href="#" class="btn btn-info">Registeration</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card" style="width: 13rem;">
+              <img src="images/upsc.jpeg" class="card-img-top" alt="..." height="200">
+              <div class="card-body">
+                <h5 class="card-title fe-bolder">UPSC EXAM</h5>
+                <p class="card-text ">For more info</p>
+                <a href="#" class="btn btn-info">Registeration</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card" style="width: 13rem;">
+              <img src="./images/1.jpeg" class="card-img-top" alt="..." height="200">
+              <div class="card-body">
+                <h5 class="card-title fw-boder">SSC EXAM</h5>
+                <p class="card-text">For more info</p>
+                <a href="#" class="btn btn-info">Registeration</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card" style="width: 13rem;">
+              <img src="./images/upsc.jpeg" class="card-img-top" alt="..." height="200">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder">UPPSC EXAM</h5>
+                <p class="card-text">For more info</p>
+                <a href="#" class="btn btn-info">Registeration</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </marquee>
+    </div>
+
+    <!-------------------------------------------Footer ---------------------------------------------->
+    <div  class="row  py-4 " style="background-color: rgb(218, 218, 218);">
+            <div class="col-sm-4">
+                <div class="row text-center m-4">Our online test platform is designed to boost your confidence and success.
+                         <br><b>"Test Yourself, Improve Yourself"</b>
+                </div>
+                <div class="row text-center">
+                <b>Links:</b>
+                <center>
+                    <i class="fa-brands fa-facebook fa-fade "></i>
+                    <i class="fa-brands fa-instagram fa-fade"></i>
+                    <i class="fa-brands fa-linkedin-in fa-fade"></i>
+                    <i class="fa-brands fa-x-twitter fa-fade"></i>
+                    <i class="fa-solid fa-globe fa-spin"></i> 
+                </center>
+                  
+               </div>
+
+            </div>
+            <div class="col-sm-4">
+                
+               <div class="row px-5">
+                 <h3 class="text-center" > Quick Links</h3><hr>
+                <div class="col-sm-6 mt-4">
+                  <ul type="none">
+                    <a href="index.html" class="text-decoration-none text-dark pt-3 "><li class="pt-3"><i class="fa-solid fa-house"></i>Home</li></a>
+                    <a href="about.html" class="text-decoration-none text-dark pt-3"><li class="pt-3"><i class="fa-solid fa-circle-info"></i>About us</li></a>
+                    <a href="showque.html" class="text-decoration-none text-dark pt-3"><li class="pt-3"><i class="fa-solid fa-hexagon-nodes"></i>Exam Center</li></a>
+                </ul>
+                </div>
+                <div class="col-sm-6 mt-4">
+                  <ul type="none">
+                    <a href="contact.html" class="text-decoration-none text-dark pt-3"><li class="pt-3"> <i class="fa-solid fa-address-book"></i>Contact Us</li></a>
+                    <a href="login.html" class="text-decoration-none text-dark pt-3"><li class="pt-3"><i class="fa-sharp fa-solid fa-circle-user"></i>Login</li></a>
+                </ul>
+                </div>
+                
+               </div>
+            </div>
+
+            <div class="col-sm-4 pt-0 pb-3 px-5">
+               <div class="row text-center" style="width: 80%; margin-left: 10%;">
+                 <h3>Our Company</h3>
+                 <hr>
+                
+                <div class="text-center mt-3 ">
+                <h5>About</h5>
+                <p>Our company  <b>KSS-KeyZenX</b>  provides you best learning in easy way because coding is not coding only error solving </p>
+               </div>
+               <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="example@gmail.com" aria-label="Recipient's username" aria-describedby="button-addon2" style="border-top-left-radius: 30px; border-bottom-left-radius: 30px;">
+                  <button class="btn btn-info" style=" border-top-right-radius: 30px; border-bottom-right-radius: 30px; " type="button" id="button-addon2">Subscribe</button>
+               </div>
+              </div>
+            </div>
+        </div>
+        <div class="row bg-dark" style="min-height: 30px;">
+            <div class="col-sm-6 text-white  text-center "> &copy;2025 All rights reserved </div>
+            <div class="col-sm-6 text-white text-center fs-6">Devloped by-<a href="developer.html" class="text-white text-decoration-none"><b>KeyZenX</b>  Team Members</a></div>
+        </div>
+      </div>
+  </div>
+
+  <button id="scrollTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+
+</body>
+
+</html>
+<script>
+     // Show/hide button on scroll
+    window.onscroll = function() { showButton() };
+
+    function showButton() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        document.getElementById("scrollTopBtn").style.display = "block";
+      } else {
+        document.getElementById("scrollTopBtn").style.display = "none";
+      }
+    }
+
+    // Scroll to top function
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }
+  </script>

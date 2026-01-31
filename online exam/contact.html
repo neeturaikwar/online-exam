@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css"
+    integrity="sha512-M5Kq4YVQrjg5c2wsZSn27Dkfm/2ALfxmun0vUE3mPiJyK53hQBHYCVAtvMYEC7ZXmYLg8DVG4tF8gD27WmDbsg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Next National Test(NNT)</title>
+  <link rel="icon" href="./images/examlogo.png">
+  <script src="d.js"></script>
+  <script>
+        function contactUs(uname, uemail, umob, utext, sname, semail, smob, stext) {
+            var status = true
+            var name, email, mob, text;
+            name = uname.value.trim()
+            email = uemail.value.trim()
+            mob = umob.value.trim()
+            text = utext.value.trim()
+
+            sname.innerText = " "
+            semail.innerText = " "
+            smob.innerText = " "
+            stext.innerText = " "
+            // validate name 
+            if (name.length == 0) {
+                sname.innerText = "Enter Your name"
+                status = false
+            }
+            else if (name.length < 3) {
+                sname.innerText = "Enter your valid name"
+                status = false
+            }
+            else {
+                var s = name.indexOf(' ')
+                if (s < 0) {
+                    sname.innerText = "please enter fullname"
+                    status = false
+                }
+            }
+            // email validate 
+            if (email.length == 0) {
+                semail.innerText = "enter your email";
+                status = false;
+            }
+            else if (email.indexOf("@") == -1) {
+                semail.innerText = "enter email contain @";
+                status = false;
+            }
+            else if (email.indexOf(".com") == -1) {
+                semail.innerText = "enter email contain .com";
+                status = false;
+            }
+            // validete mobile
+            if (mob.length == 0) {
+                smob.innerText = "please enter mobile number"
+                status = false
+            }
+            else if (mob.length != 10) {
+                smob.innerText = " MObile must be of 10 digit"
+                status = false
+            }
+            else {
+                fdigit = mob.charCodeAt(0)
+                if (!(fdigit >= 54 && fdigit <= 57)) {
+                    smob.innerText = "Invalid mobile number"
+                    status = false
+                }
+            }
+            //validate textarea
+            if (text.length == 0) {
+                stext.innerText = "please enter feedback"
+                status = false
+            }
+            else if (text.length < 4) {
+                stext.innerText = "enter complete your feedback"
+                status = false
+            }
+            else {
+                var count = 0
+                var i
+                for (i = 0; i < text.length; i++) {
+                    var ch = text.charAt(i)
+                    if (ch == '.' || ch == ',' || ch == ' ') {
+                        count++
+                    }
+                }
+                if (count < 3) {
+                    stext.innerText = "please enter your complete feedback"
+                    status = false
+                }
+            }
+            return status
+        }
+    </script>
+    <style>
+        textarea {
+            width: 300px;
+            height: 100px;
+            resize: none;
+        }
+
+        .err {
+            height: 20px;
+            color: red;
+        }
+         #scrollTopBtn {
+      display: none; 
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;
+      border: none;
+      outline: none;
+      background-color: #737576;
+      box-shadow: 0px 0px 1px 0px;
+      color: white;
+      cursor: pointer;
+      padding: 12px 15px;
+      border-radius: 50%;
+      font-size: 18px;
+      transition: all 0.3s ease;
+    }
+
+    #scrollTopBtn:hover {
+      background-color: #e43434;
+      transform: scale(1.1);
+    }
+    </style>
+  
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!----------------------------------top head ------------------------------>
+    <div class="row bg-info t">
+      <div class="col-sm-6 text-center "> <i class="fa-regular fa-comments"></i>&nbsp;feedback |<span
+          >Next
+          National test</span><span ></span></div>
+      <div class="col-sm-6 text-center">see also on <a href="#" id="twitter"><i
+            class="fa-brands fa-square-x-twitter"></i></a> |
+        <a href="#" id="youtube"><i class="fa-brands fa-youtube"></i></a>| <a href="#" id="youtube"><i
+            class="fa-brands fa-square-facebook"></i></a>
+      </div>
+    </div>
+    <!-----------------------------------navbar ----------------------------------------->
+
+    <div class="row">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./images/examlogo5.webp" alt="Logo" width="50" height="35" class="d-inline-block align-text-top">
+            <span style="color:cornflowerblue;"> NEXT NATIONAL TEST</span>
+          </a>
+          <!-- <a class="navbar-brand" href="#">NNT</a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-3 mb-lg-0 gap-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"><i class="fa-solid fa-circle-info"></i>About us
+                  <i class="fa-whiteboard fa-semibold fa-house"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="showque.html"><i class="fa-solid fa-hexagon-nodes"></i>Exam Center
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html"><i class="fa-solid fa-address-book"></i>Contact Us
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html"><i class="fa-sharp fa-solid fa-circle-user"></i>Login</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-----------------------------------------------main container-------------------------------->
+    
+    <!-- row 1 -->
+    <div class="row mt-5 ">
+           
+            <!-- col-1 -->
+            <div class="col-sm-2"></div>
+            <!-- col 2 -->
+            <div class="col-sm-8">
+                <!-- col-2 row 2 -->
+                <div class="row p-3 my-3 rounded contact " style="background-color: whitesmoke;">
+                    <!-- row 2 col1 -->
+                    <div class="col-sm-6  ">
+                        <img src="images/contact.jpg"  height="100%" width="100%">
+                    </div>
+                    <!-- row 2 col2 -->
+                    <div class="col-sm-6 formdv">
+                      <h2 class="my-4 text-center">Contact Us</h2>
+                        <form action="action.php" method="post">
+                            <!-- Name -->
+                            <div class="form-floating mt-2 mb-3">
+                                <input type="text" class="form-control" id="uname" placeholder="Jhon Roy" required>
+                                <label for="floatingInput"><i class="fa-solid fa-user"></i> Name</label>
+                                <span id="sname" class="err"></span>
+                            </div>
+                            <!-- Email -->
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="uemail" placeholder="name@example.com"
+                                    required>
+                                <label for="floatingInput"><i class="fa-solid fa-square-envelope"></i> Email Address</label>
+                                <span id="semail" class="err"></span>
+                            </div>
+                            <!-- Mobile no. -->
+                            <div class="form-floating mb-3">
+                                <input type="number" class="form-control" id="umob" placeholder="9876543210" required>
+                                <label for="floatingInput"><i class="fa-solid fa-phone"></i> Mobile No.</label>
+                                <span id="smob" class="err"></span>
+                            </div>
+
+                            <!-- Feedback -->
+                            
+                              
+                              <div class="form-floating">
+                                <textarea id="utext" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
+                                <label for="floatingTextarea2"><i class="fa-solid fa-comments"></i> Comments</label>
+                                <span id="stext" class="err"></span>
+                            </div>
+
+                            <!-- Button -->
+                            <center>
+                                <input class="bg-info text-dark fw-bold rounded m-2 p-2 col-6 mt-3" type="submit"
+                                    value="Submit"
+                                    onclick=" return contactUs(uname,uemail,umob,utext,sname,semail,smob,stext)" style="border: none;">
+                            </center>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-sm-2"></div>
+        </div>
+        
+        <div class="row my-5" style="width: 80%; margin-left: 10%;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.39859483821!2d80.86705078044172!3d25.18977712025725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3984a7d8354a53d1%3A0x55f946b2ed4bae6a!2sKamadgiri%20Software%20Solutions%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1758914092075!5m2!1sen!2sin" width="100%" height="450" style="border-radius:10px; box-shadow: 0px 0px 2px 1px; border: 5px solid rgb(183, 178, 178);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    <!-------------------------------------------Footer ---------------------------------------------->
+   <div  class="row  py-4 " style="background-color: rgb(218, 218, 218);">
+            <div class="col-sm-4">
+                <div class="row text-center m-4">Our online test platform is designed to boost your confidence and success.
+                         <br><b>"Test Yourself, Improve Yourself"</b>
+                </div>
+                <div class="row text-center">
+                <b>Links:</b>
+                <center>
+                    <i class="fa-brands fa-facebook fa-fade "></i>
+                    <i class="fa-brands fa-instagram fa-fade"></i>
+                    <i class="fa-brands fa-linkedin-in fa-fade"></i>
+                    <i class="fa-brands fa-x-twitter fa-fade"></i>
+                    <i class="fa-solid fa-globe fa-spin"></i> 
+                </center>
+                  
+               </div>
+
+            </div>
+            <div class="col-sm-4">
+                
+               <div class="row px-5">
+                 <h3 class="text-center" > Quick Links</h3><hr>
+                <div class="col-sm-6 mt-4">
+                  <ul type="none">
+                    
+                    <a href="index.html" class="text-decoration-none text-dark pt-3 "><li class="pt-3"><i class="fa-solid fa-house"></i>Home</li></a>
+                    <a href="about.html" class="text-decoration-none text-dark pt-3"><li class="pt-3"><i class="fa-solid fa-circle-info"></i>About us</li></a>
+                    <a href="showque.html" class="text-decoration-none text-dark pt-3"><li class="pt-3"><i class="fa-solid fa-hexagon-nodes"></i>Exam Center</li></a>
+                </ul>
+                </div>
+                <div class="col-sm-6 mt-4">
+                  <ul type="none">
+                    <a href="contact.html" class="text-decoration-none text-dark pt-3"><li class="pt-3"> <i class="fa-solid fa-address-book"></i>Contact Us</li></a>
+                    <a href="login.html" class="text-decoration-none text-dark pt-3"><li class="pt-3"><i class="fa-sharp fa-solid fa-circle-user"></i>Login</li></a>
+                </ul>
+                </div>
+                
+               </div>
+            </div>
+
+            <div class="col-sm-4 pt-0 pb-3 px-5">
+               <div class="row text-center" style="width: 80%; margin-left: 10%;">
+                 <h3>Our Company</h3>
+                 <hr>
+                
+                <div class="text-center mt-3 ">
+                <h5>About</h5>
+                <p>Our company  <b>KSS-KeyZenX</b>  provides you best learning in easy way because coding is not coding only error solving </p>
+               </div>
+               <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="example@gmail.com" aria-label="Recipient's username" aria-describedby="button-addon2" style="border-top-left-radius: 30px; border-bottom-left-radius: 30px;">
+                  <button class="btn btn-info" style=" border-top-right-radius: 30px; border-bottom-right-radius: 30px; " type="button" id="button-addon2">Subscribe</button>
+               </div>
+              </div>
+            </div>
+        </div>
+        <div class="row bg-dark" style="min-height: 30px;">
+            <div class="col-sm-6 text-white  text-center "> &copy;2025 All rights reserved </div>
+            <div class="col-sm-6 text-white text-center fs-6">Devloped by-<a href="developer.html" class="text-white text-decoration-none"><b>KeyZenX</b>  Team Members</a></div>
+        </div>
+      </div>
+  </div>
+    <button id="scrollTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+
+</body>
+
+</html>
+<script>
+     // Show/hide button on scroll
+    window.onscroll = function() { showButton() };
+
+    function showButton() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        document.getElementById("scrollTopBtn").style.display = "block";
+      } else {
+        document.getElementById("scrollTopBtn").style.display = "none";
+      }
+    }
+
+    // Scroll to top function
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }
+  </script>

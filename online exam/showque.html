@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css"
+    integrity="sha512-M5Kq4YVQrjg5c2wsZSn27Dkfm/2ALfxmun0vUE3mPiJyK53hQBHYCVAtvMYEC7ZXmYLg8DVG4tF8gD27WmDbsg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Next National Test(NNT)</title>
+  <link rel="icon" href="./images/examlogo.png">
+
+    <script >
+    var dt=new Date();
+    h=dt.getHours();
+    m=dt.getMinutes();
+    s=dt.getSeconds();  
+    function CurrentTime()
+    {
+    var dt=new Date();
+    var hr,min,sec;
+    hr=dt.getHours();
+    min=dt.getMinutes();
+    sec=dt.getSeconds();
+    var curTime=hr+":"+min+":"+sec
+  
+  if(hr==h&&min==m+parseInt(2))
+    {
+       // document.getElementById("para1").innerHTML="Injoin Your Test Now?"
+
+       //Yaha per test starting page ka link
+       window.location.href="timerafter.html";
+    }
+    else
+    {
+     document.getElementById("para").innerHTML="Time start after 2 minut"
+     document.getElementById("time").innerHTML=curTime; 
+    }
+     return;
+    }
+    window.setInterval(CurrentTime,1000)
+  
+    </script>
+    <style>
+      #para{
+        font-size: 45px;
+        text-align: center;
+      height: 450px;
+      line-height: 450px;
+      color: royalblue;
+      font-weight: 700;
+      }
+       #time{
+        font-size: 45px;
+        text-align: center;
+      height: 450px;
+      line-height: 450px;
+      color: green;
+      font-weight: 700;
+      }
+       #scrollTopBtn {
+      display: none; /* default hidden */
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;
+      border: none;
+      outline: none;
+      background-color: #737576;
+      box-shadow: 0px 0px 1px 0px;
+      color: white;
+      cursor: pointer;
+      padding: 12px 15px;
+      border-radius: 50%;
+      font-size: 18px;
+      transition: all 0.3s ease;
+    }
+
+    #scrollTopBtn:hover {
+      background-color: #e43434;
+      transform: scale(1.1);
+    }
+    </style>
+</head>
+<body>
+    
+    
+
+
+
+
+
+    <!-- //////////////////////////////////////////// -->
+     <div class="container-fluid">
+    <!----------------------------------top head ------------------------------>
+    <div class="row bg-info t">
+      <div class="col-sm-6 text-center "> <i class="fa-regular fa-comments"></i>&nbsp;feedback |<span
+          >Next
+          National test</span><span ></span></div>
+      <div class="col-sm-6 text-center">see also on <a href="#" id="twitter"><i
+            class="fa-brands fa-square-x-twitter"></i></a> |
+        <a href="#" id="youtube"><i class="fa-brands fa-youtube"></i></a>| <a href="#" id="youtube"><i
+            class="fa-brands fa-square-facebook"></i></a>
+      </div>
+    </div>
+    <!-----------------------------------navbar ----------------------------------------->
+
+    <div class="row">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./images/examlogo5.webp" alt="Logo" width="50" height="35" class="d-inline-block align-text-top">
+            <span style="color:cornflowerblue;"> NEXT NATIONAL TEST</span>
+          </a>
+          <!-- <a class="navbar-brand" href="#">NNT</a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-3 mb-lg-0 gap-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"><i class="fa-solid fa-circle-info"></i>About us
+                  <i class="fa-whiteboard fa-semibold fa-house"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="showque.html"><i class="fa-solid fa-hexagon-nodes"></i>Exam Center
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html"><i class="fa-solid fa-address-book"></i>Contact Us
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html"><i class="fa-sharp fa-solid fa-circle-user"></i>Login</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-----------------------------------------------main container-------------------------------->
+
+    <div class="row" style="background-color: #EBEBEB;">
+    <div class="col-sm-6">
+      <p id="para"></p>
+      </div>
+   <div class="col-sm-2"></div>
+   <div class="col-sm-4">
+    <span id="time"></span>
+   </div>
+  
+  </div>
+
+    <!-------------------------------------------Footer ---------------------------------------------->
+    <div  class="row  py-4 " style="background-color: rgb(218, 218, 218);">
+            <div class="col-sm-4">
+                <div class="row text-center m-4">Our online test platform is designed to boost your confidence and success.
+                         <br><b>"Test Yourself, Improve Yourself"</b>
+                </div>
+                <div class="row text-center">
+                <b>Links:</b>
+                <center>
+                    <i class="fa-brands fa-facebook fa-fade "></i>
+                    <i class="fa-brands fa-instagram fa-fade"></i>
+                    <i class="fa-brands fa-linkedin-in fa-fade"></i>
+                    <i class="fa-brands fa-x-twitter fa-fade"></i>
+                    <i class="fa-solid fa-globe fa-spin"></i> 
+                </center>
+                  
+               </div>
+
+            </div>
+            <div class="col-sm-4">
+                
+               <div class="row px-5">
+                 <h3 class="text-center" > Quick Links</h3><hr>
+                <div class="col-sm-6 mt-4">
+                  <ul type="none">
+                    <a href="index.html" class="text-decoration-none text-dark pt-3 "><li class="pt-3"><i class="fa-solid fa-house"></i>Home</li></a>
+                    <a href="about.html" class="text-decoration-none text-dark pt-3"><li class="pt-3"><i class="fa-solid fa-circle-info"></i>About us</li></a>
+                    <a href="showque.html" class="text-decoration-none text-dark pt-3"><li class="pt-3"><i class="fa-solid fa-hexagon-nodes"></i>Exam Center</li></a>
+                </ul>
+                </div>
+                <div class="col-sm-6 mt-4">
+                  <ul type="none">
+                    <a href="contact.html" class="text-decoration-none text-dark pt-3"><li class="pt-3"> <i class="fa-solid fa-address-book"></i>Contact Us</li></a>
+                    <a href="login.html" class="text-decoration-none text-dark pt-3"><li class="pt-3"><i class="fa-sharp fa-solid fa-circle-user"></i>Login</li></a>
+                </ul>
+                </div>
+                
+               </div>
+            </div>
+
+            <div class="col-sm-4 pt-0 pb-3 px-5">
+               <div class="row text-center" style="width: 80%; margin-left: 10%;">
+                 <h3>Our Company</h3>
+                 <hr>
+                
+                <div class="text-center mt-3 ">
+                <h5>About</h5>
+                <p>Our company  <b>KSS-KeyZenX</b>  provides you best learning in easy way because coding is not coding only error solving </p>
+               </div>
+               <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="example@gmail.com" aria-label="Recipient's username" aria-describedby="button-addon2" style="border-top-left-radius: 30px; border-bottom-left-radius: 30px;">
+                  <button class="btn btn-info" style=" border-top-right-radius: 30px; border-bottom-right-radius: 30px; " type="button" id="button-addon2">Subscribe</button>
+               </div>
+              </div>
+            </div>
+        </div>
+        <div class="row bg-dark" style="min-height: 30px;">
+            <div class="col-sm-6 text-white  text-center "> &copy;2025 All rights reserved </div>
+            <div class="col-sm-6 text-white text-center fs-6">Devloped by-<a href="developer.html" class="text-white text-decoration-none"><b>KeyZenX</b>  Team Members</a></div>
+        </div>
+  
+  </div>
+
+    <!-- Timmer function start -->
+      <button id="scrollTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+
+</body>
+</html>
+<script>
+     // Show/hide button on scroll
+    window.onscroll = function() { showButton() };
+
+    function showButton() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        document.getElementById("scrollTopBtn").style.display = "block";
+      } else {
+        document.getElementById("scrollTopBtn").style.display = "none";
+      }
+    }
+
+    // Scroll to top function
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }
+  </script>

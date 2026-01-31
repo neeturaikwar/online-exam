@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css"
+    integrity="sha512-M5Kq4YVQrjg5c2wsZSn27Dkfm/2ALfxmun0vUE3mPiJyK53hQBHYCVAtvMYEC7ZXmYLg8DVG4tF8gD27WmDbsg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Next National Test(NNT)</title>
+  <link rel="icon" href="./images/examlogo.png">
+  <script src="d.js"></script>
+  <style>
+    .hide{
+      display: none;
+    }
+    #reg,#log{
+      animation-name: formanim;
+      animation-timing-function: linear;
+      animation-duration: 1s;
+      animation-iteration-count: 0.8;
+    }
+    @keyframes formanim {
+      from{
+        scale: 0.8;
+        opacity: 0.5;
+      }
+      to{
+        scale: 1;
+        opacity: 1;
+      }
+    }
+       #scrollTopBtn {
+      display: none; /* default hidden */
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;
+      border: none;
+      outline: none;
+      background-color: #737576;
+      box-shadow: 0px 0px 1px 0px;
+      color: white;
+      cursor: pointer;
+      padding: 12px 15px;
+      border-radius: 50%;
+      font-size: 18px;
+      transition: all 0.3s ease;
+    }
+
+    #scrollTopBtn:hover {
+      background-color: #e43434;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!----------------------------------top head ------------------------------>
+    <div class="row bg-info t">
+      <div class="col-sm-6 text-center "> <i class="fa-regular fa-comments"></i>&nbsp;feedback |<span
+          >Next
+          National test</span><span ></span></div>
+      <div class="col-sm-6 text-center">see also on <a href="#" id="twitter"><i
+            class="fa-brands fa-square-x-twitter"></i></a> |
+        <a href="#" id="youtube"><i class="fa-brands fa-youtube"></i></a>| <a href="#" id="youtube"><i
+            class="fa-brands fa-square-facebook"></i></a>
+      </div>
+    </div>
+    <!-----------------------------------navbar ----------------------------------------->
+
+    <div class="row">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./images/examlogo5.webp" alt="Logo" width="50" height="35" class="d-inline-block align-text-top">
+            <span style="color:cornflowerblue;"> NEXT NATIONAL TEST</span>
+          </a>
+          <!-- <a class="navbar-brand" href="#">NNT</a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-3 mb-lg-0 gap-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"><i class="fa-solid fa-circle-info"></i>About us
+                  <i class="fa-whiteboard fa-semibold fa-house"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="showque.html"><i class="fa-solid fa-hexagon-nodes"></i>Exam Center
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html"><i class="fa-solid fa-address-book"></i>Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html"><i class="fa-sharp fa-solid fa-circle-user"></i>Login</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-----------------------------------------------main container-------------------------------->
+    <div class="row my-5 px-5 " id="log">
+
+       <!--Image-->
+       <div class="col-sm-1"></div>
+       <div class="col-sm-5 d-none d-md-block p-0">
+          <div class="card h-100 rounded-0 border-0">
+             <img src="images/log.jpg" class="card-img imga h-100">
+            </div>
+         </div>
+         <!-- Form-->
+         <div class="col-sm-5 bg-light p-5">
+            <div class="card border-0 bg-light h-100">
+                   
+                    <div class="card-body">
+                        <span class="fw-bold">Login to your account</span>
+                        <p class="text-end">Login with</p>
+                        <p class="text-end">
+                        <a href="#" class="text-secondary fs-4"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="text-secondary fs-4"><i class="fa-brands fa-google"></i></a>
+                        <a href="#" class="text-secondary fs-4"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </p>
+                        <form action="showque.html" method="post" enctype="multipart/form-data">
+                            
+
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="temail"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput"><i class="fa-solid fa-square-envelope"></i> Email address</label>
+                                <span id="semail" class="err"></span>
+                            </div>
+
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="tpass"
+                                    placeholder="Password">
+                                <label for="floatingPassword"><i class="fa-solid fa-lock"></i> Password</label>
+                                <span id="spass" class="err"></span>  
+                            </div><br>
+                            <a href="#" style="text-decoration: none;">Forgat Password ?</a><br><br>
+                                 <center>
+                                   <div class="text-end d-grid col-6">
+                                      <input type="submit" class="btn btn-info"  value="Login" onclick=" return validatemyloginform(temail,tpass,semail,spass)"/>
+                                    </div>
+                                 </center>
+                                   
+                                </form>
+                                <div class="card-footer text-center mt-3">
+                                  <small>Are you not registered? <a onclick="switchForm()" style="color: blue;cursor: pointer;">Registraion</a></small>
+                                </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+        <!-- start registration form  -->
+
+        <div class="row  rounded overflow-hidden py-5 hide " id="reg" style="min-height: 500px; width: 95%; margin-left: 2.5%;">
+      <!-- <div class="container py-5 my-5 d-flex align-items-center justify-content-center" > -->
+        
+
+            <!--Image-->
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5 d-none d-md-block p-0">
+                <div class="card h-100 rounded-0 border-0">
+                    <img src="images/reg.png" class="card-img imga h-100">
+                </div>
+            </div>
+            <!-- Form-->
+            <div class="col-sm-5 bg-light p-4 shadow">
+                <div class="card border-0 bg-light h-100">
+                    <div class="card-body">
+                        <h3 class="card-title mb-4 pb-3 bg-info text-center" style="border-radius: 5px;">Register</h3>
+                        <form >
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="tname" placeholder="Enter your full name" >
+                                <label for="floatingInput" ><i class="fa-solid fa-user"></i> Full name</label>
+                                <span id="sname" class="err" style="height: 20px;"></span>
+                            </div>
+
+                            <!--gender-->
+                            <!-- <div class="mb-3"> -->
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Gender:</label>
+
+                                <div class="form-check form-check-inline">
+
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="tmale"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Male</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="tfemale"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">Female</label>
+
+                                </div><br>
+                                <span id="sgender" class="err" style="height: 20px;"></span>
+                            </div>
+
+                            <!--end-->
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="temail" placeholder="enter gmail">
+                                <label for="floatingInput"><i class="fa-solid fa-square-envelope"></i> Email address</label>
+                                <span id="smail" class="err" style="height: 20px;"></span>
+                            </div>
+
+                            <!--password-->
+
+                            <div class="form-floating mb-3" >
+                                <input type="password" class="form-control" id="tpassword" placeholder="enter password">
+                                <label for="floatingInput"><i class="fa-solid fa-lock"></i> Password</label>
+                                <span id="spassword" class="err" style="height: 20px;"></span>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="tconfirmPassword"
+                                    placeholder="Password">
+                                <label for="floatingPassword"><i class="fa-solid fa-lock"></i> Confirm password</label>
+                                <span id="confirmp" class="err" style="height: 20px;"></span>
+                            </div>
+
+                            <div class="d-grid ">
+                                <input type="button" value="Register" class="btn btn-info"
+                                    onclick="validateform(tname,tmale,tfemale,temail,tpassword,tconfirmPassword,sname,sgender,smail,spassword,confirmp)" />
+                            </div>
+                          </form>
+                          <div class="card-footer text-center mt-3">
+                           <small>Already have an account? <a onclick="switchForm1()" style="color: blue; cursor: pointer;">Login here</a></small>
+                         </div>
+                    </div>
+                <!-- </div> -->
+            <!-- </div> -->
+
+        </div>
+            <div class="col-sm-1"></div>
+    </div>
+    </div>
+
+        <!-- end registration form  -->
+    <!-------------------------------------------Footer ---------------------------------------------->
+   <div  class="row  py-4 " style="background-color: rgb(218, 218, 218);">
+            <div class="col-sm-4">
+                <div class="row text-center m-4">Our online test platform is designed to boost your confidence and success.
+                         <br><b>"Test Yourself, Improve Yourself"</b>
+                </div>
+                <div class="row text-center">
+                <b>Links:</b>
+                <center>
+                    <i class="fa-brands fa-facebook fa-fade "></i>
+                    <i class="fa-brands fa-instagram fa-fade"></i>
+                    <i class="fa-brands fa-linkedin-in fa-fade"></i>
+                    <i class="fa-brands fa-x-twitter fa-fade"></i>
+                    <i class="fa-solid fa-globe fa-spin"></i> 
+                </center>
+                  
+               </div>
+
+            </div>
+            <div class="col-sm-4">
+                
+               <div class="row px-5">
+                 <h3 class="text-center" > Quick Links</h3><hr>
+                <div class="col-sm-6 mt-4">
+                  <ul type="none">
+                    <a href="index.html" class="text-decoration-none text-dark pt-3 "><li class="pt-3"><i class="fa-solid fa-house"></i>Home</li></a>
+                    <a href="" class="text-decoration-none text-dark pt-3"><li class="pt-3"><i class="fa-solid fa-circle-info"></i>About us</li></a>
+                    <a href="showque.html" class="text-decoration-none text-dark pt-3"><li class="pt-3"><i class="fa-solid fa-hexagon-nodes"></i>Exam Center</li></a>
+                </ul>
+                </div>
+                <div class="col-sm-6 mt-4">
+                  <ul type="none">
+                    <a href="registration.html" class="text-decoration-none text-dark pt-3"><li class="pt-3"> <i class="fa-solid fa-registered"></i>Register</li></a>
+                    <a href="login.html" class="text-decoration-none text-dark pt-3"><li class="pt-3"><i class="fa-sharp fa-solid fa-circle-user"></i>Login</li></a>
+                </ul>
+                </div>
+                
+               </div>
+            </div>
+
+            <div class="col-sm-4 pt-0 pb-3 px-5">
+               <div class="row text-center" style="width: 80%; margin-left: 10%;">
+                 <h3>Our Company</h3>
+                 <hr>
+                
+                <div class="text-center mt-3 ">
+                <h5>About</h5>
+                <p>Our company  <b>KSS-KeyZenX</b>  provides you best learning in easy way because coding is not coding only error solving </p>
+               </div>
+               <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="example@gmail.com" aria-label="Recipient's username" aria-describedby="button-addon2" style="border-top-left-radius: 30px; border-bottom-left-radius: 30px;">
+                  <button class="btn btn-info" style=" border-top-right-radius: 30px; border-bottom-right-radius: 30px; " type="button" id="button-addon2">Subscribe</button>
+               </div>
+              </div>
+            </div>
+        </div>
+        <div class="row bg-dark" style="min-height: 30px;">
+            <div class="col-sm-6 text-white  text-center "> &copy;2025 All rights reserved </div>
+            <div class="col-sm-6 text-white text-center fs-6">Devloped by-<a href="developer.html" class="text-white text-decoration-none"><b>KeyZenX</b>  Team Members</a></div>
+        </div>
+      </div>
+        <button id="scrollTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+
+  </div>
+      <script>
+        function switchForm(){
+          var log = document.getElementById("log");
+          var reg = document.getElementById("reg");
+          
+          log.classList.add("hide");
+          reg.classList.remove("hide");
+        }
+         function switchForm1(){
+          var log = document.getElementById("log");
+          var reg = document.getElementById("reg");
+          
+          log.classList.remove("hide");
+          reg.classList.add("hide");
+        }
+        var lpass
+        var lemail
+        var rpass
+        var remail
+        function validatemyloginform(temail,tpass,semail,spass){
+            var status=true;
+            var email,pass;
+            email=temail.value.trim();
+            lemail=email;
+
+            pass=tpass.value.trim();
+            lpass=pass;
+            semail.innerText;
+            spass.innerText;
+                //validate email
+              //   if(email.length==0){
+              //       semail.innerText="enter your email";
+              //   }
+              //  else 
+              //  if(email.indexOf(".com")==-1){
+              //    semail.innerText="enter the valid email"
+              //    status=false;
+
+              //  }
+                //validate password
+                // if(pass.length==0){
+                // spass.innerText="Enter the password"
+                // status=false;
+                // }
+                // else if(pass.length<8){
+                //     spass.innerText="Password must be 8 digit";
+                //     status=false;
+                // }
+                // else if( pass.length>15){
+                //     spass.innerText="password length minimum 15 character";
+                //     status=false;
+                   
+                // }
+                //  else 
+                 if((lpass !=rpass || lemail !=remail))
+                 {
+                  spass.innerText = "Incorrect User Email And Password";
+                  status = false;
+              }else {
+                window.location.href = "showque.html?id=1";
+              }
+                   // At least one uppercase letter
+                  
+              //  else if (pass.charcodeAt("65-97")){
+              //  spass.innerText="Missing uppercase letter";
+              //  if(ch<=65 && ch>=90){
+              //      if(ch<=97 && ch>=122){
+              //       count++;
+              //      }
+              //  }
+
+              // status=false;
+              // }
+                 return status;
+            }
+            
+            function validateform(tname, tmale, tfemale, temail, tpassword, tconfirmPassword, sname, sgender, smail, spassword, confirmp) {
+
+            // alert(tname.value)
+
+            var statu = true;
+
+
+            var name, email, password, confirmPassword;
+             
+            name = tname.value.trim();
+
+            email = temail.value.trim();
+            password = tpassword.value.trim();
+            remail=email
+            rpass=password
+
+            confirmPassword = tconfirmPassword.value.trim();
+            sname.innerText = "";
+            sgender.innerText = " ";
+            smail.innerText = ""
+            spassword.innerText = ""
+            confirmp.innerText = ""
+
+            // sconfirmPassword.innerText=""
+            if (name.length == 0) {
+                // alert(name)
+                sname.innerText = "Enter your name";
+                statu = false;
+            }
+            else if (name.length < 3) {
+                sname.innerText = "Enter your valid name";
+                statu = false;
+            }
+            else {
+                var s = name.indexOf(' ');
+                if (s < 0) {
+                    sname.innerText = "Please enter fullname"
+                    statu = false;
+                }
+            }
+            //Gender
+            if (tfemale.checked == false && tmale.checked == false) {
+                sgender.innerText = "Please Choose Your gender";
+                statu = false;
+            }
+            //email
+            if (email.length == 0) {
+                smail.innerText = "enter your email";
+                statu = false;
+            }
+            else if (email.indexOf("@") == -1) {
+                smail.innerText = "enter email contain @";
+                statu = false;
+            }
+            else if (email.indexOf(".com") == -1) {
+                smail.innerText = "enter email contain .com";
+                statu = false;
+            }
+            //password
+            if (password.length == 0) {
+                spassword.innerText = "enter your password";
+                statu = false;
+            }
+            else if (password.length < 9) {
+                spassword.innerText = "password contain 8 lettter";
+                statu = false;
+            }
+            else if (password.length > 15) {
+                spassword.innerText = "password not be 15 words";
+                statu = false;
+            }
+            //confirm password
+            if (confirmPassword.length == 0) {
+                confirmp.innerText = "enter your confirm password";
+                statu = false;
+            }
+            else if (confirmPassword.length < 9) {
+                confirmp.innerText = "password contain 8 lettter";
+                statu = false;
+            }
+            else if (confirmPassword.length > 15) {
+                confirmp.innerText = "password not be 15 words";
+                statu = false;
+            }
+            else if (!(confirmPassword === password)) {
+                
+                confirmp.innerText = "enter must be same password";
+                statu = false;
+            }
+          if(statu == true)
+          {
+             switchForm1()
+          }
+         
+
+        }
+        
+    </script>
+</body>
+
+</html>
+<script>
+     // Show/hide button on scroll
+    window.onscroll = function() { showButton() };
+
+    function showButton() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        document.getElementById("scrollTopBtn").style.display = "block";
+      } else {
+        document.getElementById("scrollTopBtn").style.display = "none";
+      }
+    }
+
+    // Scroll to top function
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }
+  </script>
